@@ -35,7 +35,7 @@ ping -n 2 0.0.0.0 >nul
 cls
 echo Loading data...
 ping -n 2 0.0.0.0 >nul
-if exist val.ini (
+if exist account.ini (
 	call Load.bat
 ) else ( 
 	goto boot
@@ -108,7 +108,7 @@ if "%cmd%"=="txt" (goto txt)
 if "%cmd%"=="TXT" (goto txt)
 if "%cmd%"=="KUK!" (echo mmm, secret phrase... IM'A KUKIK!)
 if "%cmd%"=="games" (echo list of games - tic tac toe, guess the number, minesweeper)
-if "%cmd%"=="GAMES" (echo list of games - tic tac toe, guess the number, minesweeper, Dialog of computer(BETA))
+if "%cmd%"=="GAMES" (echo list of games - tic tac toe, guess the number, minesweeper)
 if "%cmd%"=="minesweeper" (start minesweeper)
 if "%cmd%"=="MINESWEEPER" (start minesweeper)
 if "%cmd%"=="info" (echo Current Directory:%mypath% Version:%version% Build:%build%)
